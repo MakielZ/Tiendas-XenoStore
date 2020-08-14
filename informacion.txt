@@ -1,0 +1,2 @@
+Este .htaccess va a hacer que no necesite en la direccion
+el /public/ para poder acceder a las paginas

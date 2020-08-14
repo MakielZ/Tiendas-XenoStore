@@ -1,0 +1,21 @@
+El archivo htaccess va a controlar el comportamiento del servidor apache, 
+hablando de esta manera manejara las directrices por las que se rige
+
+Pueden existir diversos htaccess entre directorios, pero, por ejemplo, si yo dejo
+uno solo para toda la carpeta de un projecto, el comportamiento descrito por el .htaccess 
+lo va a tomar todo el projecto
+
+De la misma forma, el archivo .htaccess se utiliza para configurar otros muchos 
+aspectos de tu web; como las tareas de protección, mediante la restricción del acceso 
+a determinadas carpetas de tu servidor o bloqueando el acceso a determinadas 
+direcciones IP; redireccionar a pantallas de error personalizadas, como en el 
+caso de los errores 404; evitar vulnerabilidades y accesos no permitidos, 
+como el listado de los directorios que forman tu web o reducir el tiempo de 
+carga de tu página.
+
+Lo que estoy haciendo es redireccionar toda página que no se encuentra dentro del proyecto
+directamente hacia index.php
+
+Nota: investigar más acerca de los modulos y comandos de .htaccess
+
+Nota 2: En este documento irá todo l investigado hasta el momento

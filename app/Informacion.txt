@@ -1,0 +1,24 @@
+Con el archivo de gestion del servidor .htaccess de app,
+se restringe el acceso al directorio padre de app, que controlara 
+modelos, controladores y resto de configuraciones.
+
+El archivo index de la carpeta raiz va a llamar al archivo "iniciador",
+o como yo lo llame "starter", este va a cargar todos los archivos que
+esten dentro de la carpeta "app", controladores,
+modelos, etc. Así mismo pasandole esta información al index.php de la
+carpeta raiz.
+
+El comando print_r imprime informacion comprensible para el humano
+acerca de una variable.
+
+No confundir, el controlador "paginas", es el controlador por 
+defecto.
+
+Esto sucede porque la variable $url no tiene valor, 
+con ese codigo le decimos que si no hay el valor que no 
+haga nada.
+
+traer el parametro, para esto, evaluo aplicando un operador
+ternario, en caso de que halla un arreglo de valores
+(el parametro que vayas a meter), y llamo a una funcion
+callback que me traiga los arreglos
