@@ -1,0 +1,8 @@
+En controlador, la que va dentro de librerias, va el controlador
+principal, este se va a encargar de cargar los modelos y las 
+vistas
+
+En la clase vista, del controlador principal,  tenemos por 
+parametro la vista como tal, y el otro parametro va a ser
+un parametro llamado $datos, con el que definiremos como 
+un arreglo vacio por si queremos utilizar algun parametro en la vista

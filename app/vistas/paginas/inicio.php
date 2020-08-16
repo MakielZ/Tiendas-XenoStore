@@ -1,0 +1,1 @@
+<P style="font-weight: 1rem; color:brown; font-family: 'Georgia';"><?php echo "Esto se cargara al inicio" . $datos['titulo']; ?></P>

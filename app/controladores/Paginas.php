@@ -1,12 +1,22 @@
 <?php
 
-    class Paginas{
+    class Paginas extends Controlador{
 
-        public function __construct(){
-            //echo 'Constructor paginas cargando';
+        public function index(){
+
+            $datos = [ 
+
+                'titulo' => " además de esto "
+
+            ];
+
+            $this->vista('paginas/inicio', $datos);
         }
 
-        public function articulo($numero){
+        public function __construct(){
+        }
+
+        public function articulo($numero=null){
             echo $numero;
         }
 

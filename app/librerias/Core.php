@@ -24,6 +24,7 @@
             
             require_once '../app/controladores/' . ucwords($this->controladorActual)  . '.php';
             $this->controladorActual = new $this->controladorActual;
+            
 
 
             if(isset($url[1])){
@@ -31,9 +32,12 @@
                     $this->metodoActual = $url[1];
 
                     unset($url[1]);
-                }
-            }
 
+                    
+                }
+                
+                
+            }
             
             
 
