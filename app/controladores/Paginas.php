@@ -14,6 +14,7 @@
         }
 
         public function __construct(){
+            $this->articuloModelo = $this->modelo('Articulo');
         }
 
         public function articulo($numero=null){

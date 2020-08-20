@@ -1,8 +1,13 @@
 <?php
 
-    require_once '../app/librerias/Base.php';
-    require_once '../app/librerias/Controlador.php';
-    require_once '../app/librerias/Core.php';
+    require_once '../app/config/configurar.php';
+
+
+    spl_autoload_register(function($nombreClase){
+        require_once '../app/librerias/' . $nombreClase . '.php';
+
+    });
+    
 
 
 

@@ -6,3 +6,16 @@ En la clase vista, del controlador principal,  tenemos por
 parametro la vista como tal, y el otro parametro va a ser
 un parametro llamado $datos, con el que definiremos como 
 un arreglo vacio por si queremos utilizar algun parametro en la vista
+
+El archivo de configuracion es el que se encarga de configurar
+las rutas de la aplicación (te acuerdas de laravel?, bueno. así)
+
+Con la modificacion hecha en el starter, la instruccion
+spl_autoload_register me cargara todas las librerias que esten dentro
+de las librerias sin que las tenga que estar instanciando
+
+Ahora, se procedera  a la configuracion de la base de datos,
+se va a manejar pdo, como antonella y jose
+
+En el archivo 'Base' se va a crear la clase que haga la conexion
+a la base de datos
