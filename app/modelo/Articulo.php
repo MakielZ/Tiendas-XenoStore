@@ -10,7 +10,9 @@
         }
 
         public function obtenerArticulos(){
-            $this->db->query("SELECT * FROM");
+            $this->db->query("SELECT * FROM articulos");
+
+            return $this->db->registros();
         }
     }
 

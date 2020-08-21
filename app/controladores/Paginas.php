@@ -4,9 +4,12 @@
 
         public function index(){
 
+            $articulos = $this->articuloModelo->obtenerArticulos();
+
             $datos = [ 
 
-                'titulo' => " además de esto "
+                'titulo' => " además de esto ",
+                'articulos' => $articulos
 
             ];
 
