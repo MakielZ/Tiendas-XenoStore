@@ -14,6 +14,12 @@
 
             return $this->db->registros();
         }
+
+        public function cuenta(){
+            $this->db->query("SELECT* FROM articulos");
+
+            return $this->db->registro();
+        }
     }
 
 ?>

@@ -14,4 +14,16 @@
     <?php endforeach;?>
 </ul>
 
+<ul>
+    <?php foreach($datos['cuenta'] as $cuenta) : ?>
+        <li>
+            <?php
+                echo $articulo->titulo;
+            ?>
+        
+        </li>
+
+    <?php endforeach;?>
+</ul>
+
 </P>

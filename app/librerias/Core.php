@@ -13,7 +13,7 @@
 
         public function __construct(){
             $url = $this->getUrl();
- 
+
             if(isset($url[0])){
                 if(file_exists('../app/controladores/' . ucwords($url[0]).'.php')){
                 $this->controladorActual = ucwords($url[0]);
@@ -26,28 +26,19 @@
             $this->controladorActual = new $this->controladorActual;
             
 
-
             if(isset($url[1])){
                 if(method_exists($this->controladorActual, $url[1])){
                     $this->metodoActual = $url[1];
 
                     unset($url[1]);
-
-                    
-                }
-                
-                
+                }   
             }
             
-            
-
             $this->parametros = $url ? array_values($url) : []  ;
             
             call_user_func_array([$this->controladorActual, $this->metodoActual], $this->parametros);
         }
         
-         
-
         public function getUrl(){
             //echo $_GET['url'];
             if(isset($_GET['url'])){
@@ -58,6 +49,5 @@
                 return $url;
             }       
          }
-
     }
 

@@ -5,11 +5,13 @@
         public function index(){
 
             $articulos = $this->articuloModelo->obtenerArticulos();
+            $cuenta = $this->articuloModelo->cuenta();
 
             $datos = [ 
 
                 'titulo' => " además de esto ",
-                'articulos' => $articulos
+                'articulos' => $articulos,
+                'cuenta' => $cuenta
 
             ];
 
@@ -17,6 +19,7 @@
         }
 
         public function __construct(){
+            echo 'Este controlador no existe';
             $this->articuloModelo = $this->modelo('Articulo');
         }
 
