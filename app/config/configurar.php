@@ -11,7 +11,7 @@
     define ('RUTA_APP', dirname(dirname( __FILE__)));
 
     //Ruta url
-    define ('RUTA_URL', '_URL_');
+    define ('RUTA_URL', 'http://localhost/xenoStore/');
 
     //Ruta del servidor
     define ('NOMBRESITIO', '_NOMBRE_SITIO');

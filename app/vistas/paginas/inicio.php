@@ -1,29 +1,17 @@
-<P style="font-weight: 1rem; color:brown; font-family: 'Georgia';">
-    <?php
-        echo RUTA_URL . $datos['titulo'];   
-     ?>
-<ul>
-    <?php foreach($datos['articulos'] as $articulo) : ?>
-        <li>
-            <?php
-                echo $articulo->titulo;
-            ?>
-        
-        </li>
+<?php require_once '../app/vistas/inc/header.php'; ?>
 
-    <?php endforeach;?>
-</ul>
+<div style="height: 30rem;" class="container-fluid text-light upfront position-static">
+    <div class="container">
+        <h1 class="display-5">mi papa tenia un burro</h1> 
+    </div>
+</div>
 
-<ul>
-    <?php foreach($datos['cuenta'] as $cuenta) : ?>
-        <li>
-            <?php
-                echo $articulo->titulo;
-            ?>
-        
-        </li>
+<div class="container-md">
+    <div class="col-4" ></div>
+    <div class="col-4" ></div>
+    <div class="col-4" ></div>
+</div>
 
-    <?php endforeach;?>
-</ul>
 
-</P>
+<?php require_once '../app/vistas/inc/footer.php'; ?>
+

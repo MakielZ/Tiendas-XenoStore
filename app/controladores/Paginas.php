@@ -9,9 +9,8 @@
 
             $datos = [ 
 
-                'titulo' => " además de esto ",
-                'articulos' => $articulos,
-                'cuenta' => $cuenta
+                'titulo' => " además de esto "
+            
 
             ];
 
@@ -19,12 +18,15 @@
         }
 
         public function __construct(){
-            echo 'Este controlador no existe';
             $this->articuloModelo = $this->modelo('Articulo');
         }
 
         public function articulo($numero=null){
             echo $numero;
+        }
+
+        public function articulos(){
+            $this->vista('paginas/biblioteca');
         }
 
         
