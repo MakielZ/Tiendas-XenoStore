@@ -3,18 +3,7 @@
     class Paginas extends Controlador{
 
         public function index(){
-
-            $articulos = $this->articuloModelo->obtenerArticulos();
-            $cuenta = $this->articuloModelo->cuenta();
-
-            $datos = [ 
-
-                'titulo' => " además de esto "
-            
-
-            ];
-
-            $this->vista('paginas/inicio', $datos);
+            $this->vista('paginas/inicio');
         }
 
         public function __construct(){

@@ -1,5 +1,5 @@
-<?php
-    require_once '../app/vistas/inc/header.php';
-?>
+<?php require_once '../app/vistas/inc/header.php'; ?>
 
-<h1>Esto es la pagina</h1>
+
+
+<?php require_once '../app/vistas/inc/footer.php'; ?>

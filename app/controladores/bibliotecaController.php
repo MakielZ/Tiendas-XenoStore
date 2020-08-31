@@ -1,6 +1,6 @@
 <?php
 
-    class Juegos extends Controlador{
+    class bibliotecaController extends Controlador{
 
         public function index(){
             $this->vista('paginas/biblioteca');
