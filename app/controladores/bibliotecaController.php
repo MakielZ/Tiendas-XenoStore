@@ -7,8 +7,8 @@
 
         }
 
+
         public function __construct(){
-            echo 'Esto si se cargo';
         }
     }
 
