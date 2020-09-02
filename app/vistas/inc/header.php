@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php RUTA_URL?>css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <link href='https://css.gg/user.css' rel='stylesheet'>
 
     <title>Document</title>
@@ -23,21 +24,22 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link text-light" href="<?php RUTA_URL?>bibliotecaController">Biblioteca <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Ofertas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Descubre</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
+    
+    <form class="form-inline my-2 my-lg-0 ml-2">
       <input class="form-control mr-sm-2" type="search" placeholder="">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
     </form>
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active ml-3 ">
+          <a class="nav-link text-light bold" href="<?php RUTA_URL?>bibliotecaController">Biblioteca <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link text-light bold" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link text-light bold" href="#">Descubre</a>
+        </li>
+    </ul>
   </div>
 </nav>
 

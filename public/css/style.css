@@ -3,3 +3,11 @@
     background-size: cover;
     background-position: center;
 }
+
+.bold{
+    font-weight: bold;
+}
+
+.blackBorder{
+    border: 0.1rem solid black;
+}
