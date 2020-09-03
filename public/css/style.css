@@ -8,6 +8,12 @@
     font-weight: bold;
 }
 
-.blackBorder{
-    border: 0.1rem solid black;
+.categoriesPanel img{
+    width: 146px;
+    height: 94px;
 }
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+  }

@@ -1,16 +1,8 @@
 <?php require_once '../app/vistas/inc/header.php'; ?>
 
 <div style="height: 30rem;" class="container-fluid upfront mb-2">
-    <div class="container row">
-
-        <div class="col-2 mt-5 text-light container-xl">
-            <h1 style="font-family: 'Lato';">Saludos</h1>
-            <p style="font-family: 'Lexend Peta', sans-serif;" class="text-light">
-                Somos su tienda de confianza
-            </p>
-        </div>
-
-        <div style="height: 26rem;" class="col-7 mt-3 container-xl">
+    <div class="container-xl row">
+        <div style="height: 26rem;" class="col-7 mt-3 container">
             <div style="border: 0.1rem solid white;" id="carouselFront" class="carousel slide mt-2" data-ride="carousel">
                     <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -34,29 +26,31 @@
             </div>
         </div>
         
-        <div style="border-radius: 0.5%; align-items: center;" class="col-3 mt-4 ml-0 mb-5 container bg-light">
+        <div style="border-radius: 0.5%; align-items: center; height: 12rem;" class="col-5 mt-4 ml-0 container-xl bg-light">
            <div class="row">
-                <div style="font-family: 'Lato';" class="col-12 container mb-2 mt-2 bold">
-                    <h6 class="h4">Categorias</h6>
+                <div style="font-family: 'Lato';" class="col-12 container mb-2 mt-1 bold align-content-center">
+                    <h6 class="h6">Categorias</h6>
                 </div>
-                <div class="col-12 mb-2">
+                <div class="col-3 mb-2">
                     <h6>Equipo</h6>
                     <a href="">
-                        <img width="" height="" src="img/keyboardMK1.jpg" alt="">
+                        <img src="img/keyboardMK1.jpg" alt="">
                     </a>
-                </div>
-                <div class="col-12 mb-2">
-                    <h6>Juegos</h6>
+                </div>  
+                <div class="col-3 mb-2">
                     <a href="">
-                        <img width="" height="" src="img/ffxv.jpg" alt="">
+                        <img src="img/keyboardMK1.jpg" alt="">
                     </a>
-                </div>
+                </div>  
+                <div class="col-3 mb-2">
+                    <a href="">
+                        <img src="img/keyboardMK1.jpg" alt="">
+                    </a>
+                </div>   
            </div>
         </div>
 
-        <div class="container col-1">
-            
-        </div>
+     
     </div>
 </div>
 
