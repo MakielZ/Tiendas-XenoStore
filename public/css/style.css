@@ -4,16 +4,51 @@
     background-position: center;
 }
 
-.bold{
-    font-weight: bold;
+#welcomeText{
+    font-family: 'Lato', fantasy;
+    font-weight: normal;
 }
 
-.categoriesPanel img{
-    width: 146px;
-    height: 94px;
+#generalPanel{
+    padding: 0;
+    border-radius: 0.2rem;
+    margin-top: 6rem !important;
 }
 
-.vl {
-    border-left: 6px solid green;
-    height: 500px;
-  }
+.categoriesElements{
+    padding-top: 5rem;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 0;
+    background: #FFFFFF;
+}
+
+.categoriesList{
+    list-style: none;
+    margin: 0;
+    padding: 0.00001rem;
+    padding-bottom: 1rem;
+}
+
+.categoriesList ul{
+    border: 1px solid;
+
+}
+
+.categoriesList li{
+    line-height: 1rem;
+    margin-top: 0.2rem;
+
+}
+.categoriesList li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.8rem;
+    text-align: inherit;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.categoriesList li a:hover{
+    color:  rgba(92, 91, 91, 0.87);
+}
+
