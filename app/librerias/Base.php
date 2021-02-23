@@ -13,7 +13,7 @@
         public function __construct(){
 
             //Configurar conexion
-            /*El dsn es el origen de la base de datos, recuerdas la sintaxis? */
+            //El dsn es el origen de la base de datos, recuerdas la sintaxis? //
             $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
             $opciones = array(
                 PDO::ATTR_PERSISTENT => true,
@@ -54,7 +54,9 @@
                 }
             }
             $this->stmt->bindValue($parametro, $valor, $tipo);
+
         }
+
 
         public function execute(){
             return $this->stmt->execute();
@@ -74,9 +76,11 @@
 
         public function rowCount(){
             $this->execute();
-            return $this->stmt->rowCount;
+            return $this->stmt->rowCount();
 
         }
+
+        
     }
     
 

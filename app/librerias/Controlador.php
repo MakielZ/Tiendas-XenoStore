@@ -15,7 +15,7 @@
             if(file_exists('../app/vistas/' . $vista . '.php')){
                 require_once '../app/vistas/' . $vista . '.php';
             }else{
-                die ('dfd');
+                die ('No existe la vista');
             }
 
         }

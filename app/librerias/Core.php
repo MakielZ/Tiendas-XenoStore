@@ -7,10 +7,11 @@
         2=metodo(funcion)
         3=parametro  */
 
-        protected $controladorActual = 'Paginas';
+        protected $controladorActual = 'inicioC';
         protected $metodoActual = 'index';
         protected $parametros = []; 
 
+        
         public function __construct(){
             $url = $this->getUrl();
             
@@ -19,8 +20,13 @@
                 $this->controladorActual = ucwords($url[0]);
 
                 unset($url[0]);
+                
                 }
+
+
             }
+
+
             
             require_once '../app/controladores/' . ucwords($this->controladorActual)  . '.php';
             $this->controladorActual = new $this->controladorActual;
@@ -38,10 +44,10 @@
             
             call_user_func_array([$this->controladorActual, $this->metodoActual], $this->parametros);
 
+
         }
         
         public function getUrl(){
-            //echo $_GET['url'];
             if(isset($_GET['url'])){
                 $url = rtrim($_GET['url'],'/');
                 $url = filter_var($url, FILTER_SANITIZE_URL);

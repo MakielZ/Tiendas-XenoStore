@@ -1,10 +1,9 @@
 <?php require_once '../app/vistas/inc/header.php'; ?>
 
-<div style="height: 30rem;" class="container-fluid upfront mb-2">
-     
-    <div class="container-xl row">
-        <div style="height: 26rem;" class="col-7 mt-5 container-sm">
-            <div id="carouselFront" class="carousel slide mt-2 border" data-ride="carousel">
+<div class="container upfront mb-2">
+    <div class="container-xl row upfront-image border-right border-bottom border">
+        <div style="height: 23rem;" class="col-7 mt-5 container-sm">
+            <div id="carouselFront" class="carousel slide mt-2 border shadow-lg" data-ride="carousel">
                     <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="img/fifa21.jpg" alt="">
@@ -27,7 +26,7 @@
             </div>
         </div>
         
-        <div id="generalPanel" class="col-xl-4 container mt-5 categoriesElements generalPanel border row">
+        <div id="generalPanel" class="col-xl-4 container mt-5 categoriesElements generalPanel border row shadow-lg">
            <div class="col-sm-6 border-right">
                <div class="categoriesElements mt-2">
                     <h6>Gaming</h6>
@@ -62,9 +61,11 @@
         <div class="col-1">
         </div>
     </div>
+
+    
 </div>
 
-<div class="container">
+<div class="container mt-2">
     <span id="welcomeText" class="h2">Lo mismo de siempre, pero más barato</span>
 </div>
 
@@ -73,7 +74,7 @@
 <div class="container-md mt-4">
     <div class="row">
         <div class="col-4">
-            <a href="">
+            <a href="<?php RUTA_URL?>inicioC/hola">
                 <img class="blackBorder" style="width: 20rem; height: 11.75rem;"src="img/fallguys.jpg" alt="">
             </a>
         </div>
@@ -86,14 +87,13 @@
             <a href="">
                 <img class="blackBorder" style="width: 20rem; height: 11.75rem;"src="img/op4.jpg" alt="">
             </a>
-        </div>
+            <
     </div>
 </div>
 
-<div class="container-sm">
-    <h1 style="font-family: 'Nunito', sans-serif;" class="display-3">Rebajas</h1>
-</div>
 <br>
+
+
 
 
 <?php require_once '../app/vistas/inc/footer.php'; ?>

@@ -1,9 +1,168 @@
+
+
 .upfront{
-    background-image: url("../img/upfront.jpg");
-    background-size: cover;
+    background: linear-gradient(to bottom, #f8f8f8, white) ;
+    border-radius: 3px;    
     background-position: center;
+    height: 25.5rem;
+    width: 100vw;
 }
 
+.upfront-image{
+    background: url(../img/upfront2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 17rem;
+    width: inherit;
+}
+
+
+
+.btn-login{
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-login-header{
+    background: #e57373;
+}
+
+.btn-login-form{
+    background: #555555;
+}
+
+.bg-login{
+    background: linear-gradient(to left,  #ff5147 0%, #ff817a 50%, #ff5147 100%);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.bg-login .container{
+    width: 20rem;
+    height: 35rem;
+}
+
+.bg-login .card{
+    height: 25rem;
+}
+
+.bg-login .card .card-body {
+    background:rgba(0,0,0,0.1) !important;
+
+}
+
+.login-icon{
+    position: relative;
+    bottom: 4rem;
+}
+
+.login-title{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 6px solid white;
+}
+
+.box div:nth-child(1){
+    top: 14%;
+    left: 42%;
+    animation:  animate 9s linear infinite;
+}
+
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation:  animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation:  animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation:  animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation:  animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation:  animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation:  animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation:  animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation:  animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation:  animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.btn-login:hover{
+    text-decoration: none;
+}
+
+.card .description-card{
+    padding: 0;
+}
+
+.btn-categories-bg{
+    background: #c56183 !important;
+}
 #welcomeText{
     font-family: 'Lato', fantasy;
     font-weight: normal;
@@ -43,7 +202,7 @@
 .categoriesList li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
-    font-size: 0.8rem;
+    font-size: 0.68rem;
     text-align: inherit;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -52,3 +211,123 @@
     color:  rgba(92, 91, 91, 0.87);
 }
 
+.links{
+    text-decoration: none;
+    text-justify: kashida;
+    color: black
+}
+
+.user-panel{
+    position: fixed;
+    height: 100%;
+    width: 14rem;
+    background: #ed6663;
+    
+}
+
+.user-icon{
+    color: #f7f2e7;
+    position: absolute;
+    top: 505;
+}
+
+.table-head-color{
+    background: #30475e;
+}
+
+.jumbotron{
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.option-btn p {
+     margin-top: 10px; 
+    
+}
+
+a{ 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+.option-btn {
+	min-height: 100px;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+a.btn {
+	display: inline-block;
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+	a.btn:hover {
+		background-color: #e3e3e3;
+		border-color: rgba(0,0,0,0.5);
+	}
+	
+	a.btn:active {
+		background-color: #CCC;
+		border-color: rgba(0,0,0,0.9);
+	}
+
+a.btn.btn-red {
+	background-color: #e7726c;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+}
+
+a.btn.btn-red:hover {
+		background-color: #DA4F49;
+		border-color: rgba(0,0,0,0.5);
+}
+	
+a.btn.btn-red:active {
+		background-color: #B32C24;
+        border-color: rgba(0,0,0,0.9);
+}
+
+.panel-admin{
+    background: #393e46;
+}
+
+  
+.panel-admin ul {
+    counter-reset: index;  
+    padding: 0;
+    max-width: 300px;
+  }
+  
+ .panel-admin ul li {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+  }
+  
+  .panel-admin ul li:hover{
+    background: rgba(255, 255, 255, 0.062);
+  }
+  
+  .panel-admin ul li a{
+      text-decoration: none;
+      color: white;
+  }
+  .panel-admin ul li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .img-responsive{
+    width: auto;
+    height: 100px; 
+  }
